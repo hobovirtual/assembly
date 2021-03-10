@@ -1,0 +1,17 @@
+---
+version: 1
+flow:
+  flow_start:
+    next: action1
+  action1:
+    action: abx - py - retrieve bearer token
+    next: action2
+  action2:
+    action: abx - py - get workload resourceid
+    next: action3
+  action3:
+    action: abx - py - get workload add disk resource actions
+    next: action4
+  action4:
+    action: abx - py - request additional disk workload
+    next: flow_end

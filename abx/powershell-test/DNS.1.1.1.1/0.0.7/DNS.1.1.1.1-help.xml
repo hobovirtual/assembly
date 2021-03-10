@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Resolve-1111</command:name>
+      <command:verb>Resolve</command:verb>
+      <command:noun>1111</command:noun>
+      <maml:description>
+        <maml:para>Resolves a HostName against Cloudflare's 1.1.1.1 DNS over HTTPS (DoH) Web Service</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Cerates and submits a query to Cloudflare's 1.1.1.1 DNS over HTTPS (DoH) Web Service. Returns the result object</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Resolve-1111</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>HostName</maml:name>
+          <maml:Description>
+            <maml:para>The DNS hostname to query.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+          <maml:name>Type</maml:name>
+          <maml:Description>
+            <maml:para>The type of DNS query. Common types are A, AAAA, CNAME, MX, TXT and SOA. The default is A. See iana.org (https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4)for more details.</maml:para>
+          </maml:Description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">A</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NS</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MD</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MF</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">CNAME</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SOA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MB</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MG</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MR</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NULL</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">WKS</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PTR</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HINFO</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MINFO</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MX</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TXT</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">RP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AFSDB</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">X25</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ISDN</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">RT</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NSAP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NSAPPTR</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SIG</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">KEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PX</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">GPOS</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AAAA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">LOC</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NXT</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">EID</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NIMLOC</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SRV</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ATMA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NAPTR</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">KX</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">CERT</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">A6</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DNAME</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SINK</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">OPT</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">APL</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DS</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SSHFP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">IPSECKEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">RRSIG</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NSEC</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DNSKEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DHCID</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NSEC3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NSEC3PARAM</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TLSA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SMIMEA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Unassigned</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HIP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NINFO</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">RKEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TALINK</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">CDS</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">CDNSKEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">OPENPGPKEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">CSYNC</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SPF</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">UINFO</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">UID</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">GID</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">UNSPEC</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NID</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">L32</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">L64</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">LP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">EUI48</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">EUI64</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TKEY</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TSIG</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">IXFR</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AXFR</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MAILB</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">MAILA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">All</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">URI</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">CAA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AVC</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DOA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TA</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DLV</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">DnsQueryType</command:parameterValue>
+          <dev:type>
+            <maml:name>DnsQueryType</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>A</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ApiBaseUri</maml:name>
+          <maml:Description>
+            <maml:para>Base URI of the Cloudflare DNS API. The default is https://cloudflare-dns.com/dns-query This can be overridden using the configuration module.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>https://cloudflare-dns.com/dns-query</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ApiBaseUri</maml:name>
+        <maml:Description>
+          <maml:para>Base URI of the Cloudflare DNS API. The default is https://cloudflare-dns.com/dns-query This can be overridden using the configuration module.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>https://cloudflare-dns.com/dns-query</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>HostName</maml:name>
+        <maml:Description>
+          <maml:para>The DNS hostname to query.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+        <maml:name>Type</maml:name>
+        <maml:Description>
+          <maml:para>The type of DNS query. Common types are A, AAAA, CNAME, MX, TXT and SOA. The default is A. See iana.org (https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4)for more details.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">DnsQueryType</command:parameterValue>
+        <dev:type>
+          <maml:name>DnsQueryType</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>A</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>DnsQueryType</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>In future versions the output will be strongly typed.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>Resolve-1111 google.com</dev:code>
+        <dev:remarks>
+          <maml:para>This example resolves the hostname `google.com`.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/markekraus/DNS.1.1.1.1/blob/master/Docs/Resolve-1111.md</maml:linkText>
+        <maml:uri>https://github.com/markekraus/DNS.1.1.1.1/blob/master/Docs/Resolve-1111.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>1.1.1.1</maml:linkText>
+        <maml:uri>https://1.1.1.1/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Cloudflare DNS over HTTPS (DoH)</maml:linkText>
+        <maml:uri>https://developers.cloudflare.com/1.1.1.1/dns-over-https/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>DoH using JSON</maml:linkText>
+        <maml:uri>https://developers.cloudflare.com/1.1.1.1/dns-over-https/json-format/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>iana.org</maml:linkText>
+        <maml:uri>https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>

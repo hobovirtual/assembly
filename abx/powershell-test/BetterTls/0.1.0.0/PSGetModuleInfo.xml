@@ -1,0 +1,128 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">BetterTls</S>
+      <S N="Version">0.1.0.0</S>
+      <S N="Type">Module</S>
+      <S N="Description">PowerShell Module to Enable TLS 1.1 and 1.2 for Use in Windows PowerShell Where Neither are Enabled by Default</S>
+      <S N="Author">Mark Kraus</S>
+      <S N="CompanyName">MarkEKraus</S>
+      <S N="Copyright">Copyright (c) Mark Kraus. All rights reserved.</S>
+      <DT N="PublishedDate">2018-03-25T01:25:25-04:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/markekraus/BetterTls/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/markekraus/BetterTls</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Security</S>
+          <S>WebCmdlets</S>
+          <S>Utility</S>
+          <S>TLS</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Disable-Tls</S>
+                <S>Enable-Tls</S>
+                <S>Get-Tls</S>
+                <S>Set-Tls</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Disable-Tls</S>
+                <S>Enable-Tls</S>
+                <S>Get-Tls</S>
+                <S>Set-Tls</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="7">
+        <TN RefId="3">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Mark Kraus. All rights reserved.</S>
+          <S N="description">PowerShell Module to Enable TLS 1.1 and 1.2 for Use in Windows PowerShell Where Neither are Enabled by Default</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2869</S>
+          <S N="downloadCount">2869</S>
+          <S N="packageSize">7485</S>
+          <S N="published">3/25/2018 1:25:25 AM -04:00</S>
+          <S N="created">3/25/2018 1:25:25 AM -04:00</S>
+          <S N="lastUpdated">6/18/2020 2:09:29 AM -04:00</S>
+          <S N="tags">Security WebCmdlets Utility TLS PSModule PSFunction_Disable-Tls PSCommand_Disable-Tls PSFunction_Enable-Tls PSCommand_Enable-Tls PSFunction_Get-Tls PSCommand_Get-Tls PSFunction_Set-Tls PSCommand_Set-Tls PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-06-18T02:09:29Z</S>
+          <S N="NormalizedVersion">0.1.0</S>
+          <S N="Authors">Mark Kraus</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">BetterTls.nuspec|BetterTls-help.xml|BetterTls.psd1|BetterTls.psm1</S>
+          <S N="GUID">db2a59b5-d629-43ae-a8a8-cc34766aa00e</S>
+          <S N="CompanyName">Unknown</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/Users/crenaud/git/assembly/abx/powershell-test/BetterTls/0.1.0.0</S>
+    </MS>
+  </Obj>
+</Objs>

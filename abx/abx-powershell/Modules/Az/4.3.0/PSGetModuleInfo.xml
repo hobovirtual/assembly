@@ -1,0 +1,1125 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az</S>
+      <S N="Version">4.3.0</S>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Cmdlets to manage resources in Azure. This module is compatible with WindowsPowerShell and PowerShell Core._x000D__x000A_For more information about the Az module, please visit the following: https://docs.microsoft.com/en-us/powershell/azure/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2020-06-23T06:24:17-04:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ARM</S>
+          <S>ResourceManager</S>
+          <S>Linux</S>
+          <S>AzureAutomationNotSupported</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">4.3.0 - June 2020_x000D__x000A_Az.Accounts_x000D__x000A_* Supported discovering environment setting by default and adding environment via 'Add-AzEnvironment'_x000D__x000A_* Update preloaded assemblies [#12024], [#11976]_x000D__x000A_* Updated Azure.Core assembly_x000D__x000A_* Fixed an issue that may cause 'Connect-AzAccount' to fail in multi-threaded execution [#11201]_x000D__x000A__x000D__x000A_Az.Aks_x000D__x000A_* Replaced usage of old [AccessProfile API](https://docs.microsoft.com/rest/api/aks/managedclusters/getaccessprofile) with calls to [ListClusterAdmin](https://docs.microsoft.com/rest/api/aks/managedclusters/listclusteradmincredentials) and [ListClusterUser](https://docs.microsoft.com/rest/api/aks/managedclusters/listclusterusercredentials) APIs_x000D__x000A__x000D__x000A_Az.Batch_x000D__x000A_* Updated Az.Batch to use 'Microsoft.Azure.Management.Batch' SDK version to 11.0.0_x000D__x000A_* Added the ability to set the BatchAccount Identity in the 'New-AzBatchAccount' cmdlet_x000D__x000A__x000D__x000A_Az.CognitiveServices_x000D__x000A_* Supported displaying account capabilities._x000D__x000A_* Supported modifying PublicNetworkAccess._x000D__x000A__x000D__x000A_Az.Compute_x000D__x000A_* Added SimulateEviction parameter to Set-AzVM and Set-AzVmssVM cmdlets._x000D__x000A_* Added 'Premium_LRS' to the argument completer of StorageAccountType parameter for New-AzGalleryImageVersion cmdlet._x000D__x000A_* Added Substatuses to VMCustomScriptExtension [#11297]_x000D__x000A_* Added 'Delete' to the argument completer of EvictionPolicy parameter for New-AzVM and New-AzVMConfig cmdlets._x000D__x000A_* Fixed name of new VM Extension for SAP_x000D__x000A__x000D__x000A_Az.DataFactory_x000D__x000A_* Updated ADF .Net SDK version to 4.9.0_x000D__x000A__x000D__x000A_Az.EventHub_x000D__x000A_* Added Managed Identity parameters to 'New-AzEventHubNamespace' and 'Set-AzEventHubNamespace' cmdlets_x000D__x000A__x000D__x000A_Az.Functions_x000D__x000A_* Added support to create PowerShell 7.0 and Java 11 function apps_x000D__x000A__x000D__x000A_Az.HDInsight_x000D__x000A_* Supported listing hosts and restart specific hosts of the HDInsight cluster._x000D__x000A__x000D__x000A_Az.HealthcareApis_x000D__x000A_* Updated the SDK version to 1.1.0_x000D__x000A_* Added support for Export settings and Managed Identity_x000D__x000A__x000D__x000A_Az.Monitor_x000D__x000A_* Fixed input object parameter for 'Set-AzActivityLogAlert'_x000D__x000A_* Fixed 'InputObject' parameter for 'Set-AzActionGroup' [#10868]_x000D__x000A__x000D__x000A_Az.Network_x000D__x000A_* Added support for AddressPrefixType parameter to 'Remove-AzExpressRouteCircuitConnectionConfig'_x000D__x000A_* Added new cmdlets for Azure FirewallPolicy_x000D__x000A_    - 'New-AzFirewallPolicyDnsSetting'_x000D__x000A_    - Support for Destination FQDN in Network Rules for Firewall Policy_x000D__x000A_* Added support for backend address pool operations_x000D__x000A_    - 'New-AzLoadBalancerBackendAddressConfig'_x000D__x000A_    - 'New-AzLoadBalancerBackendAddressPool'_x000D__x000A_    - 'Set-AzLoadBalancerBackendAddressPool'_x000D__x000A_    - 'Remove-AzLoadBalancerBackendAddressPool'_x000D__x000A_    - 'Get-AzLoadBalancerBackendAddressPool'_x000D__x000A_* Added name validation for 'New-AzIpGroup'_x000D__x000A_* Added new cmdlets for Azure FirewallPolicy_x000D__x000A_    - 'New-AzFirewallPolicyThreatIntelWhitelist'_x000D__x000A_* Updated below commands for feature: Custom dns servers set/remove on VirtualWan P2SVpnGateway._x000D__x000A_    - Updated New-AzP2sVpnGateway: Added optional parameter '-CustomDnsServer' for customers to specify their dns servers to set on P2SVpnGateway, which can be used by Point to site clients._x000D__x000A_    - Updated Update-AzP2sVpnGateway: Added optional parameter '-CustomDnsServer' for customers to specify their dns servers to set on P2SVpnGateway, which can be used by Point to site clients._x000D__x000A_* Updated 'Update-AzVpnGateway'_x000D__x000A_    - Added optional parameter '-BgpPeeringAddress' for customers to specify their custom bgps to set on VpnGateway._x000D__x000A_* Added new cmdlet to support resetting the routing state of a VirtualHub resource:_x000D__x000A_    - 'Reset-AzHubRouter'_x000D__x000A_* Updated below things based on recent swagger change for Firewall Policy_x000D__x000A_    - Changes names for RuleGroup, RuleCollectionGroup and RuleType_x000D__x000A_    - Added support for Firewall Policy NAT Rule Collections to support multiple NAT Rule Collection_x000D__x000A_* [Breaking Change] Added mandatory parameter 'SourceIpGroup' for 'New-AzFirewallPolicyApplicationRule' and 'New-AzFirewallPolicyNetworkRule'._x000D__x000A_* [Breaking Change] Fixed 'New-AzFirewallPolicyApplicationRule', parameter 'SourceAddress' to be mandatory._x000D__x000A_* [Breaking Change] Fixed 'New-AzFirewallPolicyApplicationRule', parameter 'SourceAddress' to be mandatory._x000D__x000A_* [Breaking Change] Removed mandatory parameters: 'TranslatedAddress', 'TranslatedPort' for 'New-AzFirewallPolicyNatRuleCollection'._x000D__x000A_* Added new cmdlets to support PrivateLink On Application Gateway_x000D__x000A_    - 'New-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'Get-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'New-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'Set-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'Remove-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'New-AzApplicationGatewayPrivateLinkIpConfiguration'_x000D__x000A_* Added new cmdlets for HubRouteTables child resource of VirtualHub._x000D__x000A_    - 'New-AzVHubRoute'_x000D__x000A_    - 'New-AzVHubRouteTable'_x000D__x000A_    - 'Get-AzVHubRouteTable'_x000D__x000A_    - 'Update-AzVHubRouteTable'_x000D__x000A_    - 'Remove-AzVHubRouteTable'_x000D__x000A_* Updated existing cmdlets to support optional RoutingConfiguration input parameter for custom routing in VirtualWan._x000D__x000A_    - 'New-AzExpressRouteConnection'_x000D__x000A_    - 'Set-AzExpressRouteConnection'_x000D__x000A_    - 'New-AzVirtualHubVnetConnection'_x000D__x000A_    - 'Update-AzVirtualHubVnetConnection'_x000D__x000A_    - 'New-AzVpnConnection'_x000D__x000A_    - 'Update-AzVpnConnection'_x000D__x000A_    - 'New-AzP2sVpnGateway'_x000D__x000A_    - 'Update-AzP2sVpnGateway'_x000D__x000A__x000D__x000A_Az.OperationalInsights_x000D__x000A_* Fixed bug PSWorkspace doesn't implement IOperationalInsightsWorkspace [#12135]_x000D__x000A_* Added 'pergb2018' to valid value set of parameter 'Sku' in 'Set-AzOperationalInsightsWorkspace' _x000D__x000A_* Added alias 'FunctionParameters' for parameter 'FunctionParameter' to_x000D__x000A_    - 'New-AzOperationalInsightsSavedSearch'_x000D__x000A_    - 'Set-AzOperationalInsightsSavedSearch'_x000D__x000A__x000D__x000A_Az.RecoveryServices_x000D__x000A_* Azure Backup added support for fetching MAB items._x000D__x000A_* Azure Site Recovery supports disk type 'StandardSSD_LRS'_x000D__x000A__x000D__x000A_Az.Resources_x000D__x000A_* Added 'UsageLocation', 'GivenName', 'Surname', 'AccountEnabled', 'MailNickname', 'Mail' on 'PSADUser' [#10526] [#10497]_x000D__x000A_* Fixed issue that '-Mail' doesn't work on 'Get-AzADUser' [#11981]_x000D__x000A_* Added '-ExcludeChangeType' parameter to 'Get-AzDeploymentWhatIfResult' and 'Get-AzResourceGroupDeploymentWhatIfResult'_x000D__x000A_* Added '-WhatIfExcludeChangeType' parameter to 'New-AzDeployment' and 'New-AzResourceGroupDeployment'_x000D__x000A_* Updated 'Test-Az*Deployment' cmdlets to show better error messages_x000D__x000A_* Fixed help message for '-Name' parameter of deployment create and What-If cmdlets_x000D__x000A__x000D__x000A_Az.Sql_x000D__x000A_* Added support for service principal for Set SQL Server Azure Active Directory Admin cmdlet_x000D__x000A_* Fixed sync issue in Data Classification cmdlets._x000D__x000A_* Supported searching user by mail on 'Set-AzSqlServerActiveDirectoryAdministrator' [#12192]_x000D__x000A__x000D__x000A_Az.Storage_x000D__x000A_* Supported create Storage account with RequireInfrastructureEncryption_x000D__x000A_    -  'New-AzStorageAccount'_x000D__x000A_* Moved the logic of loading Azure.Core to Az.Accounts_x000D__x000A__x000D__x000A_Az.Websites_x000D__x000A_* Added safeguard to delete created webapp if restore failed in 'Restore-AzDeletedWebApp'_x000D__x000A_* Added 'SourceWebApp.Location' for 'New-AzWebApp' and 'New-AzWebAppSlot'_x000D__x000A_* Fixed bug that prevented changing Container settings in 'Set-AzWebApp' and 'Set-AzWebAppSlot'_x000D__x000A_* Fixed bug to get SiteConfig when -Name is not given for Get-AzWebApp_x000D__x000A_* Added a support to create ASP for Linux Apps_x000D__x000A_* Added exceptions for clone across resource groups</S>
+      <Obj N="Dependencies" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="5">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.9.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/1.9.0</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="6">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Advisor</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Advisor/[1.1.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="7">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Aks</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Aks/[1.1.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="8">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.AnalysisServices</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.AnalysisServices/[1.1.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="9">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ApiManagement</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ApiManagement/[2.0.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="10">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ApplicationInsights</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ApplicationInsights/[1.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="11">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Automation</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.3.6</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Automation/[1.3.6]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="12">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Batch</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">3.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Batch/[3.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="13">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Billing</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Billing/[1.0.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="14">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Cdn</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.4.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Cdn/[1.4.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="15">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.CognitiveServices</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.5.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.CognitiveServices/[1.5.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="16">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Compute</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">4.2.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Compute/[4.2.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="17">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ContainerInstance</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ContainerInstance/[1.0.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="18">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ContainerRegistry</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ContainerRegistry/[1.1.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="19">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DataBoxEdge</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DataBoxEdge/[1.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="20">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DataFactory</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.8.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DataFactory/[1.8.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="21">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DataLakeAnalytics</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DataLakeAnalytics/[1.0.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="22">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DataLakeStore</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.2.8</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DataLakeStore/[1.2.8]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="23">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DataShare</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DataShare/[1.0.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="24">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DesktopVirtualization</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DesktopVirtualization/[1.0.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="25">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DeploymentManager</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DeploymentManager/[1.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="26">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.DevTestLabs</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.DevTestLabs/[1.0.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="27">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Dns</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Dns/[1.1.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="28">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.EventGrid</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.2.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.EventGrid/[1.2.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="29">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.EventHub</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.5.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.EventHub/[1.5.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="30">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.FrontDoor</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.5.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.FrontDoor/[1.5.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="31">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Functions</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Functions/[1.0.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="32">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.HDInsight</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">3.3.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.HDInsight/[3.3.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="33">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.HealthcareApis</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.HealthcareApis/[1.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="34">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.IotHub</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.5.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.IotHub/[2.5.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="35">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.KeyVault</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.KeyVault/[2.0.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="36">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.LogicApp</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.3.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.LogicApp/[1.3.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="37">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.MachineLearning</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.MachineLearning/[1.1.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="38">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Maintenance</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Maintenance/[1.0.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="39">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ManagedServices</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ManagedServices/[1.0.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="40">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.MarketplaceOrdering</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.MarketplaceOrdering/[1.0.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="41">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Media</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Media/[1.1.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="42">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Monitor</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Monitor/[2.0.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="43">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Network</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">3.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Network/[3.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="44">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.NotificationHubs</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.NotificationHubs/[1.1.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="45">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.OperationalInsights</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.2.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.OperationalInsights/[2.2.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="46">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.PolicyInsights</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.3.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.PolicyInsights/[1.3.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="47">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.PowerBIEmbedded</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.PowerBIEmbedded/[1.1.2]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="48">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.PrivateDns</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.PrivateDns/[1.0.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="49">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.RecoveryServices</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.10.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.RecoveryServices/[2.10.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="50">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.RedisCache</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.2.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.RedisCache/[1.2.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="51">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Relay</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Relay/[1.0.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="52">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Resources</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.2.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Resources/[2.2.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="53">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ServiceBus</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.4.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ServiceBus/[1.4.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="54">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.ServiceFabric</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.ServiceFabric/[2.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="55">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.SignalR</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.SignalR/[1.1.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="56">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Sql</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.8.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Sql/[2.8.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="57">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.SqlVirtualMachine</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.SqlVirtualMachine/[1.1.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="58">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Storage</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">2.2.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Storage/[2.2.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="59">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.StorageSync</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.2.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.StorageSync/[1.2.3]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="60">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.StreamAnalytics</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.StreamAnalytics/[1.0.1]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="61">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Support</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Support/[1.0.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="62">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.TrafficManager</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.0.4</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.TrafficManager/[1.0.4]</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="63">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Websites</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">1.10.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Websites/[1.10.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="64">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Cmdlets to manage resources in Azure. This module is compatible with WindowsPowerShell and PowerShell Core._x000D__x000A_For more information about the Az module, please visit the following: https://docs.microsoft.com/en-us/powershell/azure/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">4.3.0 - June 2020_x000D__x000A_Az.Accounts_x000D__x000A_* Supported discovering environment setting by default and adding environment via 'Add-AzEnvironment'_x000D__x000A_* Update preloaded assemblies [#12024], [#11976]_x000D__x000A_* Updated Azure.Core assembly_x000D__x000A_* Fixed an issue that may cause 'Connect-AzAccount' to fail in multi-threaded execution [#11201]_x000D__x000A__x000D__x000A_Az.Aks_x000D__x000A_* Replaced usage of old [AccessProfile API](https://docs.microsoft.com/rest/api/aks/managedclusters/getaccessprofile) with calls to [ListClusterAdmin](https://docs.microsoft.com/rest/api/aks/managedclusters/listclusteradmincredentials) and [ListClusterUser](https://docs.microsoft.com/rest/api/aks/managedclusters/listclusterusercredentials) APIs_x000D__x000A__x000D__x000A_Az.Batch_x000D__x000A_* Updated Az.Batch to use 'Microsoft.Azure.Management.Batch' SDK version to 11.0.0_x000D__x000A_* Added the ability to set the BatchAccount Identity in the 'New-AzBatchAccount' cmdlet_x000D__x000A__x000D__x000A_Az.CognitiveServices_x000D__x000A_* Supported displaying account capabilities._x000D__x000A_* Supported modifying PublicNetworkAccess._x000D__x000A__x000D__x000A_Az.Compute_x000D__x000A_* Added SimulateEviction parameter to Set-AzVM and Set-AzVmssVM cmdlets._x000D__x000A_* Added 'Premium_LRS' to the argument completer of StorageAccountType parameter for New-AzGalleryImageVersion cmdlet._x000D__x000A_* Added Substatuses to VMCustomScriptExtension [#11297]_x000D__x000A_* Added 'Delete' to the argument completer of EvictionPolicy parameter for New-AzVM and New-AzVMConfig cmdlets._x000D__x000A_* Fixed name of new VM Extension for SAP_x000D__x000A__x000D__x000A_Az.DataFactory_x000D__x000A_* Updated ADF .Net SDK version to 4.9.0_x000D__x000A__x000D__x000A_Az.EventHub_x000D__x000A_* Added Managed Identity parameters to 'New-AzEventHubNamespace' and 'Set-AzEventHubNamespace' cmdlets_x000D__x000A__x000D__x000A_Az.Functions_x000D__x000A_* Added support to create PowerShell 7.0 and Java 11 function apps_x000D__x000A__x000D__x000A_Az.HDInsight_x000D__x000A_* Supported listing hosts and restart specific hosts of the HDInsight cluster._x000D__x000A__x000D__x000A_Az.HealthcareApis_x000D__x000A_* Updated the SDK version to 1.1.0_x000D__x000A_* Added support for Export settings and Managed Identity_x000D__x000A__x000D__x000A_Az.Monitor_x000D__x000A_* Fixed input object parameter for 'Set-AzActivityLogAlert'_x000D__x000A_* Fixed 'InputObject' parameter for 'Set-AzActionGroup' [#10868]_x000D__x000A__x000D__x000A_Az.Network_x000D__x000A_* Added support for AddressPrefixType parameter to 'Remove-AzExpressRouteCircuitConnectionConfig'_x000D__x000A_* Added new cmdlets for Azure FirewallPolicy_x000D__x000A_    - 'New-AzFirewallPolicyDnsSetting'_x000D__x000A_    - Support for Destination FQDN in Network Rules for Firewall Policy_x000D__x000A_* Added support for backend address pool operations_x000D__x000A_    - 'New-AzLoadBalancerBackendAddressConfig'_x000D__x000A_    - 'New-AzLoadBalancerBackendAddressPool'_x000D__x000A_    - 'Set-AzLoadBalancerBackendAddressPool'_x000D__x000A_    - 'Remove-AzLoadBalancerBackendAddressPool'_x000D__x000A_    - 'Get-AzLoadBalancerBackendAddressPool'_x000D__x000A_* Added name validation for 'New-AzIpGroup'_x000D__x000A_* Added new cmdlets for Azure FirewallPolicy_x000D__x000A_    - 'New-AzFirewallPolicyThreatIntelWhitelist'_x000D__x000A_* Updated below commands for feature: Custom dns servers set/remove on VirtualWan P2SVpnGateway._x000D__x000A_    - Updated New-AzP2sVpnGateway: Added optional parameter '-CustomDnsServer' for customers to specify their dns servers to set on P2SVpnGateway, which can be used by Point to site clients._x000D__x000A_    - Updated Update-AzP2sVpnGateway: Added optional parameter '-CustomDnsServer' for customers to specify their dns servers to set on P2SVpnGateway, which can be used by Point to site clients._x000D__x000A_* Updated 'Update-AzVpnGateway'_x000D__x000A_    - Added optional parameter '-BgpPeeringAddress' for customers to specify their custom bgps to set on VpnGateway._x000D__x000A_* Added new cmdlet to support resetting the routing state of a VirtualHub resource:_x000D__x000A_    - 'Reset-AzHubRouter'_x000D__x000A_* Updated below things based on recent swagger change for Firewall Policy_x000D__x000A_    - Changes names for RuleGroup, RuleCollectionGroup and RuleType_x000D__x000A_    - Added support for Firewall Policy NAT Rule Collections to support multiple NAT Rule Collection_x000D__x000A_* [Breaking Change] Added mandatory parameter 'SourceIpGroup' for 'New-AzFirewallPolicyApplicationRule' and 'New-AzFirewallPolicyNetworkRule'._x000D__x000A_* [Breaking Change] Fixed 'New-AzFirewallPolicyApplicationRule', parameter 'SourceAddress' to be mandatory._x000D__x000A_* [Breaking Change] Fixed 'New-AzFirewallPolicyApplicationRule', parameter 'SourceAddress' to be mandatory._x000D__x000A_* [Breaking Change] Removed mandatory parameters: 'TranslatedAddress', 'TranslatedPort' for 'New-AzFirewallPolicyNatRuleCollection'._x000D__x000A_* Added new cmdlets to support PrivateLink On Application Gateway_x000D__x000A_    - 'New-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'Get-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'New-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'Set-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'Remove-AzApplicationGatewayPrivateLinkConfiguration'_x000D__x000A_    - 'New-AzApplicationGatewayPrivateLinkIpConfiguration'_x000D__x000A_* Added new cmdlets for HubRouteTables child resource of VirtualHub._x000D__x000A_    - 'New-AzVHubRoute'_x000D__x000A_    - 'New-AzVHubRouteTable'_x000D__x000A_    - 'Get-AzVHubRouteTable'_x000D__x000A_    - 'Update-AzVHubRouteTable'_x000D__x000A_    - 'Remove-AzVHubRouteTable'_x000D__x000A_* Updated existing cmdlets to support optional RoutingConfiguration input parameter for custom routing in VirtualWan._x000D__x000A_    - 'New-AzExpressRouteConnection'_x000D__x000A_    - 'Set-AzExpressRouteConnection'_x000D__x000A_    - 'New-AzVirtualHubVnetConnection'_x000D__x000A_    - 'Update-AzVirtualHubVnetConnection'_x000D__x000A_    - 'New-AzVpnConnection'_x000D__x000A_    - 'Update-AzVpnConnection'_x000D__x000A_    - 'New-AzP2sVpnGateway'_x000D__x000A_    - 'Update-AzP2sVpnGateway'_x000D__x000A__x000D__x000A_Az.OperationalInsights_x000D__x000A_* Fixed bug PSWorkspace doesn't implement IOperationalInsightsWorkspace [#12135]_x000D__x000A_* Added 'pergb2018' to valid value set of parameter 'Sku' in 'Set-AzOperationalInsightsWorkspace' _x000D__x000A_* Added alias 'FunctionParameters' for parameter 'FunctionParameter' to_x000D__x000A_    - 'New-AzOperationalInsightsSavedSearch'_x000D__x000A_    - 'Set-AzOperationalInsightsSavedSearch'_x000D__x000A__x000D__x000A_Az.RecoveryServices_x000D__x000A_* Azure Backup added support for fetching MAB items._x000D__x000A_* Azure Site Recovery supports disk type 'StandardSSD_LRS'_x000D__x000A__x000D__x000A_Az.Resources_x000D__x000A_* Added 'UsageLocation', 'GivenName', 'Surname', 'AccountEnabled', 'MailNickname', 'Mail' on 'PSADUser' [#10526] [#10497]_x000D__x000A_* Fixed issue that '-Mail' doesn't work on 'Get-AzADUser' [#11981]_x000D__x000A_* Added '-ExcludeChangeType' parameter to 'Get-AzDeploymentWhatIfResult' and 'Get-AzResourceGroupDeploymentWhatIfResult'_x000D__x000A_* Added '-WhatIfExcludeChangeType' parameter to 'New-AzDeployment' and 'New-AzResourceGroupDeployment'_x000D__x000A_* Updated 'Test-Az*Deployment' cmdlets to show better error messages_x000D__x000A_* Fixed help message for '-Name' parameter of deployment create and What-If cmdlets_x000D__x000A__x000D__x000A_Az.Sql_x000D__x000A_* Added support for service principal for Set SQL Server Azure Active Directory Admin cmdlet_x000D__x000A_* Fixed sync issue in Data Classification cmdlets._x000D__x000A_* Supported searching user by mail on 'Set-AzSqlServerActiveDirectoryAdministrator' [#12192]_x000D__x000A__x000D__x000A_Az.Storage_x000D__x000A_* Supported create Storage account with RequireInfrastructureEncryption_x000D__x000A_    -  'New-AzStorageAccount'_x000D__x000A_* Moved the logic of loading Azure.Core to Az.Accounts_x000D__x000A__x000D__x000A_Az.Websites_x000D__x000A_* Added safeguard to delete created webapp if restore failed in 'Restore-AzDeletedWebApp'_x000D__x000A_* Added 'SourceWebApp.Location' for 'New-AzWebApp' and 'New-AzWebAppSlot'_x000D__x000A_* Fixed bug that prevented changing Container settings in 'Set-AzWebApp' and 'Set-AzWebAppSlot'_x000D__x000A_* Fixed bug to get SiteConfig when -Name is not given for Get-AzWebApp_x000D__x000A_* Added a support to create ASP for Linux Apps_x000D__x000A_* Added exceptions for clone across resource groups</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">258347</S>
+          <S N="downloadCount">6345560</S>
+          <S N="packageSize">26937</S>
+          <S N="published">6/23/2020 6:24:17 AM -04:00</S>
+          <S N="created">6/23/2020 6:24:17 AM -04:00</S>
+          <S N="lastUpdated">7/8/2020 12:19:49 PM -04:00</S>
+          <S N="tags">Azure ARM ResourceManager Linux AzureAutomationNotSupported PSModule PSEdition_Core PSEdition_Desktop</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-07-08T12:19:49Z</S>
+          <S N="NormalizedVersion">4.3.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.nuspec|Az.psd1|Az.psm1</S>
+          <S N="GUID">d48d710e-85cb-46a1-990f-22dae76f6b5f</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/Users/crenaud/git/assembly/abx/abx-powershell/Modules/Az/4.3.0</S>
+    </MS>
+  </Obj>
+</Objs>
