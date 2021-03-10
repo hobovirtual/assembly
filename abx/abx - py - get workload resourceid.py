@@ -1,3 +1,9 @@
+# default inputs
+#   uri = https://{vra}/deployment/api/deployments/[deploymentid]/resources
+# 
+# dependency
+#   requests
+# 
 import requests
 import json
     

@@ -2,6 +2,9 @@
 #   uri = https://{vra}/deployment/api/deployments/[deploymentid]/resources/[resourceid]/requests
 #   uritask = https://{vra}/deployment/api/requests/[taskid]
 # 
+# dependency
+#   requests
+# 
 import requests
 import json
 import time
